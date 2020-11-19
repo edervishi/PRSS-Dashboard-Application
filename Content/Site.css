@@ -1,8 +1,130 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    background-color: #dededd;
 }
 
+footer {
+    background-color: #b0b0b0;
+    color: #FFFFFF;
+    text-align: center;
+    clear: both;
+    margin-top: 20px;
+}
+
+    footer a {
+        color: white;
+    }
+
+        footer a:hover {
+            color: white;
+        }
+
+#AllPrograms {
+    text-align: center;
+    display: inline-block;
+}
+
+    #AllPrograms a {
+        text-decoration: none;
+        color: #53b982;
+    }
+
+        #AllPrograms a:hover {
+            color: #00588b;
+            text-decoration: underline;
+        }
+
+.programContainer {
+    color: black;
+    float: left;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    background-color: #dededd;
+}
+
+.program {
+    background-color: white;
+    border: 1px solid #b0b0b0;
+    border-radius: 5px;
+    color: black !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    height: 150px;
+    overflow: hidden;
+    padding: 10px 25px;
+    position: relative;
+    vertical-align: central;
+    width: 200px;
+}
+
+    .program:hover {
+        background-color: #8dc440;
+        color: white !important;
+        text-decoration: none !important;
+    }
+
+    .program:active {
+        background-color: #b0b0b0;
+    }
+
+    .program p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+div[disabled] {
+    pointer-events: none;
+    opacity: 0.7;
+}
+    div[disabled] a {
+        color: black !important;
+        font-style: italic;
+    }
+
+#SecondContent {
+    background-color: white;
+}
+
+.navbar {
+    background-color: #0b3254;
+}
+
+/* Create 3 equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33%;
+    padding: 10px;
+    /*height: 300px;*/ /* Should be removed. Only for demonstration */
+}
+
+#AboutTable {
+    background-color: white;
+}
+/* Clear floats after the columns */
+    #AboutTable:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/*AUTOMATICALLY GENERATED*/
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;

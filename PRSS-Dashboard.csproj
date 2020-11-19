@@ -204,6 +204,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\winnLogoSmall.png" />
+    <Content Include="Images\W_white-green.png" />
+    <Content Include="Images\W_white.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Connected Services\AzureAD\ConnectedService.json" />
@@ -237,6 +240,8 @@
     <Content Include="Views\UserProfile\Index.cshtml" />
     <Content Include="Views\UserProfile\Relogin.cshtml" />
     <Content Include="Views\Account\SignOutCallback.cshtml" />
+    <Content Include="Views\Home\_Programs.cshtml" />
+    <Content Include="Views\Home\_AboutTable.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
