@@ -7,31 +7,25 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" crossorigin="anonymous">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://winnco.sharepoint.com/sites/BusinessSystemsandTechnology/Shared%20Documents/PRSSApplicationCSS.css" />
 </head>
 <body>
-    @*<div class="navbar navbar-inverse navbar-fixed-top">*@
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                @*<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>*@
-                @*@Html.ActionLink("PRSS Dashboard", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
-                <a href="https://prss-dashboard.azurewebsites.net/">
-                    <img src="~/Images/W_white-green.png" alt="Winn W" height="50" style="padding:10px;" />
-                </a>
-                @*<img src="~/Images/W_white-green.png" alt="Winn W" height="50" style="padding:10px" />*@
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="@Url.Action("Index", "Home")" class="navbar-left"><img src="~/Images/W_white-green.png"></a>
+                @Html.ActionLink("PRSS Dashboard Home", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav" style="font-size:large;">
-                    <li>@Html.ActionLink("PRSS Dashboard Home", "Index", "Home")</li>
-                    <li>@*@Html.ActionLink("About", "About", "Home")*@</li>
-                    <li><a href="https://winnco.sharepoint.com/sites/residential">Winntranet Home</a></li>
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li><a href="https://winnco.sharepoint.com/sites/residential" target="_blank">Winntranet Home</a></li>
                     <li>@Html.ActionLink("Sign out", "SignOut", "Home")</li>
-
-
                 </ul>
             </div>
         </div>

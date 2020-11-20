@@ -5,22 +5,6 @@
     background-color: #dededd;
 }
 
-footer {
-    background-color: #b0b0b0;
-    color: #FFFFFF;
-    text-align: center;
-    clear: both;
-    margin-top: 20px;
-}
-
-    footer a {
-        color: white;
-    }
-
-        footer a:hover {
-            color: white;
-        }
-
 #AllPrograms {
     text-align: center;
     display: inline-block;
@@ -93,10 +77,6 @@ div[disabled] {
 
 #SecondContent {
     background-color: white;
-}
-
-.navbar {
-    background-color: #0b3254;
 }
 
 /* Create 3 equal columns that floats next to each other */
